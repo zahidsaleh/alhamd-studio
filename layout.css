@@ -1,0 +1,432 @@
+@font-face {
+    font-family: CenturyGothics;
+    src: url('century-gothic-font/GOTHIC.TTF');
+    font-weight: normal;
+}
+
+body *{
+    font-family: 'CenturyGothics';
+}
+
+/* back to top button css starts */
+#back-to-top-btn {
+    display: inline-block;
+    background-color: #ff9900cc;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #back-to-top-btn::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #back-to-top-btn:hover {
+    cursor: pointer;
+    background-color: rgba(51, 51, 51, 0.829);
+  }
+  #back-to-top-btn:active {
+    background-color: #555;
+  }
+  #back-to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+/* back to top css ends */
+
+/* cart css */
+.badge-notify{
+    background:red;
+    position:relative;
+    top: -20px;
+    right: 10px;
+  }
+/* cart css */
+
+
+/*breadcrumbs custom css*/
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "►" !important;
+}
+.breadcrumb-item a{
+    color: black;
+}
+/*breadcrumbs custom css*/
+
+
+
+
+/* top header with navbar css starts */
+
+.header-upper{
+    position: relative;
+    color: #fff;
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+    height: 25px;
+    padding: 0px;
+    width: 100%;
+}
+
+#slide-left{
+    background-color: black;
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    left: -100%;
+    -webkit-animation: slide-left 2s forwards;
+    animation: slide-left 2s forwards;
+}
+@-webkit-keyframes slide-left {
+    100% { left: 0; }
+}
+
+@keyframes slide-left {
+    100% { left: 0; }
+}
+
+
+
+.header-upper small{
+    font-size: 95%;
+}
+.header-upper a{
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+}
+.header-lower{
+    position: relative;
+    display: table;
+    width: 100%;
+}
+.header-lower-row{
+    width: inherit;
+}
+.currency-selector{
+    margin: auto;
+    padding: 15px;
+    float: right;
+    font-size: 12px;
+}
+select{
+    min-width: 50px;
+    height: 32px;
+    padding: 6px
+}
+.header-logo-txt{
+    padding-left: 20px;
+    display: contents;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 38px;
+}
+
+.header-links-wrapper{
+    position: relative;
+    padding: 5px 0;
+    float: left;
+}
+.header-links ul{
+    list-style: none;
+    padding: 0px 30px;
+}
+.header-links ul li{
+    float: right;
+    padding: 0px 20px;
+}
+
+.search:hover{
+    cursor: pointer;
+}
+
+.search-box{
+    position: relative;
+    width: auto;
+    height: auto;
+    line-height: 30px;
+    display: none;
+    font-size: 15px;
+    margin-left: 30px;
+}
+  
+.search-box:before{
+    content: "";
+    position: relative;
+}
+  
+.search-box input[type="text"]{
+    width: auto;
+    outline: none;
+    border-radius: 30px;
+    padding: 3px 20px;
+
+}
+  
+.search-box input[type="button"]{
+    cursor: pointer;
+    height: inherit;
+    padding: 5px 20px;
+}
+
+
+
+/* .vl{
+    border-left: 4px solid rgb(184, 156, 131);
+    height: auto;
+} */
+
+@media (max-width: 1000px) {
+    .header-links ul li{
+        padding: 0px 5px;
+    }
+    
+}
+@media (max-width:767px) {
+    .header-links-wrapper{
+        margin: auto;
+        width: 100%;
+    }
+    .search-box{
+        margin:auto;
+        padding: 10px 0px;
+    }
+    .search-box input[type="text"]{
+        width: auto;
+        outline: none;
+        border-radius: 30px;
+        padding: 0px 10px;
+        font-size: 15px;
+    
+    }
+    .search-box input[type="button"]{
+        cursor: pointer;
+        height: inherit;
+        padding: 5px 10px;
+        margin-top: -5px;
+    }   
+}
+.header-menu{
+    width: 100%;
+    background-color: #EEEEEE;
+    color: #DBAD60;
+    text-transform: uppercase;
+    text-align: center;
+}
+.header-menu .dropdown-menu{
+    height: auto;    
+}
+.header-menu .dropdown-menu a{
+    display: list-item;
+    list-style-type: square;
+    list-style-position: inside;
+}
+.header-menu a{
+    color: #DBAD60 !important;
+}
+.header-menu a:hover{
+    text-decoration: underline;
+}
+@media (max-width: 991px) {
+    .header-menu .dropdown-menu{
+        border: none;
+    }
+    .header-menu .dropdown-menu a{
+        text-align: center;
+        list-style-type: none;
+        color: #8d691d;
+    }
+}
+
+@media (max-width: 1000px) {
+    .currency-selector{
+        float: none;
+    }
+    .header-links ul li{
+        float: none;
+        display: inline;
+    }
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+/* top header with navbar css ends */
+
+/* breadcrumb section css */
+.bread-crumb .breadcrumb{
+    background-color: inherit;
+    width: 100%;
+}
+/* breadcrumb section css */
+
+
+
+/* footer section css starts */
+@font-face {
+    font-family: Futura;
+    src: url('/futura-std-4-cufonfonts/FuturaStdLight.otf');
+    font-weight: normal;
+}
+
+.footer-row *{
+    font-family: 'Futura';
+    color: #777;
+}
+
+.footer-row ul{
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+}
+.footer-row h5{
+    font-weight: bold;
+}
+.news-letter{
+    width: 100%;
+    height: auto;
+}
+.news-letter input{
+    border-radius: 0px;
+}
+.news-letter button{
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #eee;
+    color: #8d691d;
+    border: 1px solid #ccc;
+    height: 38px;
+    padding: 0px 10px;
+    border-radius: 0px;
+
+}
+.img-thumbnail{
+    max-width: 30% !important;
+}
+.icon-section{
+    margin-left: 30%;
+}
+.icon-section img{
+    margin-left: 10px;
+}
+.footer-lower p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.icon-section a:hover{
+    text-decoration: none;
+}
+
+@media (min-width: 576px){
+    .form-inline .form-control {
+        width: 80% !important;
+    }
+}
+@media (max-width: 575px) {
+    .news-letter button{
+        margin-left: 25%;
+        padding: 0px 10px;
+        width: 50%;
+    }    
+}
+@media (max-width: 991px) {
+    .news-letter button{
+        margin-left: 15%;
+        width: 50%;
+    }
+}
+@media (max-width: 309px) {
+    .icon-section{
+        margin-left: 10%;
+    }    
+}
+/* footer section css ends */
+
+.noScroll {overflow-y:hidden;}
+
+
+
+/* sign in overlay css */
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(255,255,255); /* Black fallback color */
+    /* background-color: rgba(0,0,0, 0.9); Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 15%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+  
+
+  
+
+  /* sign in overlay css */
+
+  body.scrolling {
+    overflow: hidden;
+}

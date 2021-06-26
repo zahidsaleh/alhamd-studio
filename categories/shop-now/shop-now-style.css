@@ -1,0 +1,211 @@
+
+@media (min-width: 576px){
+  .modal-dialog {
+    max-width: 550px !important;
+}
+}
+
+
+
+.my-image{
+  height: 600px;
+  width: 450px;
+}
+.my-image figure{
+  height: inherit !important;
+  width: inherit !important;
+}
+
+.product-detail span{
+  color: #888;
+}
+.product-detail .col-md-7{
+  padding-left: 50px;
+}
+
+
+/* radio buttons css */
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+.product-detail label {
+  color: black;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+  border: 1px solid black;
+}
+.product-detail label:hover{
+  color: white;
+  background: black;
+}
+
+.product-detail input[type=radio]:checked + label{
+  color: white;
+  background: black;
+}
+
+.product-detail label + input[type=radio] + label {
+  border: solid 1px black;
+}
+
+.radio-group {
+  display: inline-block;
+  margin: 20px;
+  overflow: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
+.size-guide-bg{
+    background: url(../../img/sizeguide.png) no-repeat left center;
+    background-size: 14px 24px;
+    padding: 7px 0 7px 24px;
+    border: 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.div-to-show{
+  padding: 10px 0;
+  color: #696969;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+}
+.div-to-show h5{
+  background: #333;
+  text-transform: uppercase;
+  padding: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+.sizeChart-table{
+  overflow: none;
+  border: 1px solid;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.sizeChart-table thead{
+  background: #f1f1f1;
+  border: 1px solid;
+  size: 12px;
+}
+.sizeChart-table thead td{
+  border: 1px solid;
+  padding: 5px 10px;
+}
+.sizeChart-table tbody{
+  font-size: 12px;
+}
+.sizeChart-table tbody td{
+  border: 1px solid;
+  padding: 5px 10px;
+}
+
+
+
+
+/* quantity info css */
+
+.quantity-info button{
+  width: 100%;
+  margin-top: 10px;
+  background: rgb(66, 66, 66);
+  color: white;
+  text-transform: uppercase;
+}
+.quantity-info button:hover{
+  color: white;
+  background: black;
+  transition: all ease-in .5s;
+}
+
+.qty-title{
+  margin-bottom: -8px;
+  text-transform: uppercase;
+}
+
+.qtySelector{
+	border: 1px solid #ddd;
+	width: 107px;
+	height: 35px;
+	margin: 10px auto 0;
+}
+.qtySelector .fa{
+	padding: 10px 5px;
+	width: 35px;
+	height: 100%;
+	float: left;
+	cursor: pointer;
+}
+.qtySelector .fa.clicked{
+	font-size: 12px;
+	padding: 12px 5px;
+}
+.qtySelector .fa-minus{
+	border-right: 1px solid #ddd;
+}
+.qtySelector .fa-plus{
+	border-left: 1px solid #ddd;
+}
+.qtySelector .qtyValue{
+	border: none;
+	padding: 5px;
+	width: 35px;
+	height: 100%;
+	float: left;
+	text-align: center
+}
+
+/* quantity info css */
+
+
+/* product details css */
+
+.product-details span{
+  float: right;
+  font-weight: 600;
+}
+.product-details h4{
+  cursor: pointer;
+}
+
+/* product details css */
+
+
+
+
+@media (max-width:1199px) {
+  .zoo-item .zoo-img{
+    width: 400px !important;
+  }
+  /* .zoo-img{
+    width: 400px !important;
+  } */
+}
+@media (max-width:991px) {
+  .zoo-item .zoo-img{
+    width: 300px !important;
+  }
+}
+@media (max-width: 767px) {
+  .zoo-item .zoo-img{
+    width: 450px !important;
+  }
+}

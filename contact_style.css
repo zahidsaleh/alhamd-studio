@@ -1,0 +1,18 @@
+.top-container h2{
+    padding: 20px;
+    font-weight: bold;
+}
+.top-container p{
+    font-weight: 300;
+}
+.top-container{
+    background-color: white;
+}
+.form-section{
+    background-color: white;
+    position: relative;
+}
+.top-container h5{
+    font-weight: bold;
+}
+

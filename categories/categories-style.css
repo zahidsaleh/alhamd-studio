@@ -1,0 +1,52 @@
+/* categories section css */
+
+.categories-card-section img{
+    height: 420px;
+}
+
+@media (max-width: 920px) {
+    .categories-card-section img{
+        height: 300px;
+    }
+}
+@media (max-width: 750px) {
+    .categories-card-section img{
+        height: 250px;
+    }
+}
+@media (max-width: 575px) {
+    .categories-card-section img{
+        height: 500px;
+    }
+}
+
+.card-deck .card-body{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+.card-deck .card-footer{
+    text-align: center;
+    font-size: 20px;
+}
+.shop-overlay {
+    position: absolute; 
+    bottom: 100px; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .overlay-section:hover .shop-overlay {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+/* categories section css */
